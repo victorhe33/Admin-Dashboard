@@ -115,6 +115,30 @@ div.communities {
 .nav-greeter {
   display: grid;
   grid-template-columns: 100px 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 0px;
+}
+
+.nav-iconbig {
+  grid-row: span 2;
+  width: min(8vw, 100%);
+  height: auto;
+  align-self: center;
+  justify-self: center;
+}
+
+.greeter-hi {
+  font-weight: bolder;
+  font-size: clamp(11px, 18px, 1vw);
+  align-self: center;
+}
+
+.greeter-name {
+  font-weight: bolder;
+  font-size: clamp(20px, 30px, 2vw);
+  align-self: start;
+  white-space: nowrap;
 }
 
 .nav-container > div > button {
