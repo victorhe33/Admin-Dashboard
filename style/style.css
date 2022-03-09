@@ -14,8 +14,8 @@ body {
 .main-container {
   display: grid;
   height: 100%;
-  grid-template-columns: 350px 1fr;
-  grid-template-rows: 200px 1fr;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
 }
 
 .sidebar-container {
@@ -33,7 +33,7 @@ body {
 .sidebar-container > div {
   color: white;
   padding: 10px;
-  font-size: 24px;
+  font-size: clamp(15px, 24px, 1.5vw);
   font-weight: 1000;
   display: grid;
   grid-template-columns: 40px 1fr 1fr;
@@ -42,7 +42,7 @@ body {
 }
 
 div.sidebar-dashboard {
-  font-size: 34px;
+  font-size: clamp(20px, 34px, 2vw);
   font-weight: 1000;
   grid-row: span 2;
   align-self: start;
@@ -59,6 +59,73 @@ div.communities {
   background-color: rgb(255,255,255);
   box-shadow: 0px 0px 10px gray;
   z-index: 0;
+  display: grid;
+  grid-template-columns: 1fr 130px 130px 130px;
+  grid-template-rows: 1fr 1fr;
+  padding: 20px 50px;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-searchbar {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  min-width: 30vw;
+}
+
+.nav-searchbar > svg {
+  width: auto !important;
+  height: 60% !important;
+  viewport-fit: auto;
+}
+
+.nav-searchbar > input{
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+  background-color: rgb(226,232,240);
+  border: none;
+}
+
+.nav-alarm {
+  grid-column: span 3;
+  display: flex;
+  gap: 30px;
+  justify-content: end;
+  padding: 0px 20px;
+  align-items: center;
+}
+
+.nav-alarm > svg {
+  width: auto !important;
+  height: 30px !important;
+}
+
+.nav-icon {
+  width: auto;
+  height: 60px;
+}
+
+.nav-name {
+  font-weight: bolder;
+  font-size: clamp(20px, 30px, 2vw);
+}
+
+.nav-greeter {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+.nav-container > div > button {
+  color: white;
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: rgb(25,146,212);
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
 }
 
 .content-container {
