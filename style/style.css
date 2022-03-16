@@ -180,8 +180,8 @@ div.communities {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   display: grid;
-  gap: 20px;
-  align-items: center;
+  gap: 0px;
+  /* align-items: start; */
   width: 350px;
   /* overflow: hidden;  messes up the shadow*/
 }
@@ -217,8 +217,8 @@ div.communities {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   display: grid;
-  gap: 0px;
-  padding-top: 30px;
+  gap: 30px;
+  margin-top: 20px;
   width: 350px;
   align-items: start;
 }
