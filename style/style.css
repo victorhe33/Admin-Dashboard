@@ -181,7 +181,7 @@ div.communities {
   grid-row: 1 / 2;
   display: grid;
   gap: 0px;
-  /* align-items: start; */
+  /* g */
   width: 350px;
   /* overflow: hidden;  messes up the shadow*/
 }
