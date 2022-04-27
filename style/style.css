@@ -162,14 +162,20 @@ div.communities {
   display: grid;
   grid-template-columns: 3fr 350px;
   grid-template-rows: 1fr 1fr;
-  padding: 30px 20px 50px 20px;
+  padding: 20px 20px 20px 0px;
+  /* padding: 30px 20px 50px 20px; */
   /* align-items: start; */
+}
+
+.content-projects > .title {
+  padding: 20px;
 }
 
 .title {
   font-size: 25px;
   font-weight: 500;
 }
+
 /* PROJECTS */
 .content-projects {
   grid-column: 1 / 2;
@@ -178,18 +184,48 @@ div.communities {
 
 .projects-container {
   display: grid;
-  padding: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 38px 20px;
   gap: 25px;
 }
 
 .projects-card {
   display: grid;
-  width: 400px;
-  height: 200px;
+  grid-template-columns: 10px 1fr;
+  /* width: 400px; */
+  height: 250px;
   border-radius: 10px;
   background-color: white;
-
+  box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.502);
 }
+
+.projects-stripe {
+  background-color: rgb(251, 177, 0);
+  grid-column: 1 / 2;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.projects-card-content {
+  position: relative;
+  padding: 20px;
+}
+
+.projects-card-content > h3 {
+  font-weight: bold;
+}
+
+.projects-card-content > p {
+  color: gray;
+}
+
+.projects-card-content > img {
+  position: absolute; 
+  bottom: 20px; 
+  right: 20px;
+}
+
 
 .content-announcements {
   grid-column: 2 / 3;
@@ -232,7 +268,7 @@ div.communities {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   display: grid;
-  gap: 30px;
+  gap: 0px;
   margin-top: 20px;
   width: 350px;
   align-items: start;
@@ -245,8 +281,8 @@ div.communities {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  padding: 30px;
-  gap: 20px;
+  padding: 20px;
+  gap: 10px;
 }
 
 .trending-subcontainer {
